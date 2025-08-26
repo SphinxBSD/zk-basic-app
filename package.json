@@ -1,0 +1,8 @@
+{
+  "name": "zk-practice2",
+  "packageManager": "yarn@4.9.1",
+  "dependencies": {
+    "@aztec/bb.js": "0.87.0",
+    "@noir-lang/noir_js": "1.0.0-beta.9"
+  }
+}
