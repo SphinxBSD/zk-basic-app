@@ -24,6 +24,7 @@ document.getElementById("submit").addEventListener("click", async () => {
     const proof = await backend.generateProof(witness);
     show("logs", "Generated proof... ✅");
     show("results", proof.proof);
+    console.log(proof);
  } catch {
     show("logs", "Oh 💔");
  }
