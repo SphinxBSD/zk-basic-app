@@ -109,6 +109,47 @@
       transform: translateY(-1px);
     }
 
+     /* ------------------------------ */
+
+     #verify {
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #verify::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: left 0.5s;
+    }
+
+    #verify:hover::before {
+      left: 100%;
+    }
+
+    #verify:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+    }
+
+    #verify:active {
+      transform: translateY(-1px);
+    }
+
     .outer {
       display: flex;
       justify-content: space-between;
@@ -241,6 +282,7 @@
   <div class="input-area">
     <input id="age" type="number" placeholder="Enter age" />
     <button id="submit">Submit Age</button>
+    <button id="verify">Verify Proof</button>
   </div>
   <div class="outer">
     <div id="logs" class="inner"><h2>Logs</h2></div>

@@ -1,5 +1,11 @@
 # ZK Practice 2 - Noir Age Verification App
 
+Vista previa de la pagina:
+![alt text](image.png)
+
+Vista previa de la pagina(actualizado):
+![alt text](image-1.png)
+
 Una aplicación web que demuestra el uso de **Zero-Knowledge Proofs** para verificar la edad de un usuario sin revelar la edad exacta, utilizando el framework **Noir** y el backend **Aztec**.
 
 ## 🔍 Descripción del Proyecto
